@@ -49,6 +49,35 @@ public class LiteraluraApplication implements CommandLineRunner {
 	            }
 	            System.out.println("]"); 
 	            
+	            System.out.println("Summaries:");
+	            if (book.getSummaries() != null) {
+	                for (String summary : book.getSummaries()) {
+	                    System.out.println("  - " + summary);
+	                }
+	            } else {
+	                System.out.println("  Nenhum resumo disponível");
+	            }
+	            
+	            System.out.println("Formats:");
+	            if (book.getFormats() != null) {
+	                String htmlUrl = book.getFormats().get("text/html");
+	                String imageUrl = book.getFormats().get("image/jpeg");
+
+	                if (htmlUrl != null) {
+	                    System.out.println("  text/html: " + htmlUrl);
+	                } else {
+	                    System.out.println("  text/html: não disponível");
+	                }
+
+	                if (imageUrl != null) {
+	                    System.out.println("  image/jpeg: " + imageUrl);
+	                } else {
+	                    System.out.println("  image/jpeg: não disponível");
+	                }
+	            } else {
+	                System.out.println("  Nenhum formato disponível");
+	            }
+	            
 	            System.out.println("Languages: " + book.getLanguages()); 
 	            System.out.println("Downloads: " + book.getDownload_count()); 
 	            System.out.println("--------------------");
