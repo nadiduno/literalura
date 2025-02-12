@@ -1,9 +1,7 @@
 package com.livros.literalura.model;
 
-import java.net.URI;
 import java.util.List;
 import java.util.Map;
-import com.livros.literalura.model.DataAuthor;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
