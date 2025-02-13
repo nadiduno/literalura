@@ -20,7 +20,7 @@ Este repositório contém o backend da aplicação Literalura, construído com S
 
 Para configurar o banco de dados, você precisará ajustar as seguintes propriedades no arquivo `application.properties` ou `application.yml` (preferencialmente `application.yml` para melhor organização):
 
-```yaml
+```xml
 spring:
   application:
     name: literaluraspring
@@ -35,3 +35,16 @@ spring:
       ddl-auto: update # Ou create, dependendo da sua necessidade. Cuidado com 'create' em produção!
     show-sql: true     # Exibe as queries SQL no console (para desenvolvimento)
     format-sql: true   # Formata as queries SQL no console (para desenvolvimento)
+```
+
+
+## 🙌 Contribuindo
+
+Estamos sempre abertos a novas ideias e contribuições! Siga estas etapas:
+
+1. **Faça um fork do repositório**
+2. **Crie uma nova branch**: `git checkout -b minha-contribuicao`
+3. **Faça suas alterações e commit**: `git commit -m "Adicione uma mensagem descritiva"`
+4. **Envie suas alterações**: `git push origin minha-contribuicao`
+5. **Abra uma solicitação pull**
+
